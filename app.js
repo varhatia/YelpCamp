@@ -20,7 +20,7 @@ var campgroundsRoute = require("./routes/campgrounds"),
 //     console.log(index + ': ' + val);
 // });
 
-// console.log(process.env.DATABASEURL);
+console.log(process.env.DATABASEURL);
 // if(!process.env.DATABASEURL)
 // {   
 //     process.env.DATABASEURL = "mongodb://localhost/yelp_camp_v4";
