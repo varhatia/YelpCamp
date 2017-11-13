@@ -16,10 +16,11 @@ var campgroundsRoute = require("./routes/campgrounds"),
     commentsRoute    = require("./routes/comments"),
     indexRoute       = require("./routes/index")
 
-if(!process.env.DATABASEURL)
-{   
-    process.env.DATABASEURL = "mongodb://localhost/yelp_camp_v4";
-}
+console.log(process.env.DATABASEURL);
+// if(!process.env.DATABASEURL)
+// {   
+//     process.env.DATABASEURL = "mongodb://localhost/yelp_camp_v4";
+// }
 
 //mongoose.connect("mongodb://localhost/yelp_camp_v4");
 mongoose.connect(process.env.DATABASEURL);
